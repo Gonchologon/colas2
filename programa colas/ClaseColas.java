@@ -62,5 +62,34 @@ public class ClaseColas {
 		return false;
 		}
 		
+  ///////////////////////////////////////////////////////////////////////////////////
+		
+		
+		
+		/* Imprimir los elementos de la Fila */
+		public String getFila() {
+		String salida = "";
+		int i;
+		if (primero == info.length-1)
+		i = 0;
+		else
+		i = primero + 1;
+		while(i <= ultimo) {
+		salida += info[i].toString() + "\n";
+		if (i == info.length-1)
+		i = 0;
+		else
+		i++;
+		}
+		return salida;
+		}
+		
+	
+
+	
+
+}//main
+
+
 		
 	
